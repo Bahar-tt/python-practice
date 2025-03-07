@@ -1,0 +1,11 @@
+#without class:
+def check_positive_number(num):
+    if num < 0:
+        raise ValueError("Negative number isnot allowed!")
+    return f"Number is: {num}"
+try:
+    number = int(input("Please Enter a number:"))
+    print(check_positive_number(number))
+except ValueError as e:
+    print(e)
+    
